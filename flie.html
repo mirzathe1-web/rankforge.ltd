@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RankForge delivers strategic link building, guest post placements and SEO outreach for growing brands.">
+<title>RankForge | Build Authority. Grow Organically.</title>
+
+<style>
+:root {
+ --bg: #080808;
+ --surface: #111111;
+ --white: #ffffff;
+ --muted: #a1a1a1;
+ --border: #292929;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+ background: var(--bg);
+ color: var(--white);
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.7;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1120px, 90%); margin: auto; }
+
+header {
+ border-bottom: 1px solid var(--border);
+ position: sticky; top: 0; z-index: 10;
+ background: rgba(8,8,8,.96);
+}
+nav {
+ min-height: 76px; display: flex;
+ align-items: center; justify-content: space-between;
+ gap: 20px;
+}
+.logo { font-size: 25px; font-weight: 800; letter-spacing: -1px; }
+.logo span { color: #999; }
+.nav-links { display: flex; gap: 25px; font-size: 13px; color: #ccc; }
+.nav-links a:hover { color: white; }
+.btn {
+ display: inline-block; background: white; color: black;
+ padding: 12px 20px; border: 1px solid white;
+ font-size: 13px; font-weight: 700;
+ transition: .2s;
+}
+.btn:hover { background: transparent; color: white; }
+.btn-outline { background: transparent; color: white; }
+
+.hero { padding: 115px 0 100px; }
+.eyebrow {
+ color: #aaa; text-transform: uppercase;
+ letter-spacing: 3px; font-size: 11px; font-weight: 700;
+}
+h1 {
+ font-size: clamp(42px, 7vw, 82px);
+ line-height: 1.06; letter-spacing: -4px;
+ max-width: 850px; margin: 24px 0;
+}
+h1 span { color: #858585; }
+.hero p { color: var(--muted); max-width: 580px; font-size: 17px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+section { padding: 85px 0; border-top: 1px solid var(--border); }
+.section-heading {
+ display: flex; justify-content: space-between;
+ gap: 30px; align-items: end; margin-bottom: 40px;
+}
+h2 { font-size: clamp(30px, 4vw, 46px); letter-spacing: -1.5px; line-height: 1.2; }
+.section-heading p { max-width: 390px; color: var(--muted); font-size: 14px; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card {
+ padding: 28px; border: 1px solid var(--border);
+ background: var(--surface);
+}
+.card-number { color: #777; font-size: 12px; }
+.card h3 { font-size: 20px; margin: 22px 0 10px; }
+.card p { color: var(--muted); font-size: 14px; }
+.card:hover { border-color: #777; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; }
+.about-grid p { color: var(--muted); margin-top: 18px; }
+.stat { border-top: 1px solid var(--border); padding: 18px 0; }
+.stat strong { font-size: 21px; display: block; }
+.stat span { color: var(--muted); font-size: 13px; }
+
+.team-card { padding: 28px; border: 1px solid var(--border); }
+.initials {
+ width: 76px; height: 76px; display: grid;
+ place-items: center; border: 1px solid #555;
+ background: #1a1a1a; font-size: 25px; font-weight: 700;
+}
+.team-card h3 { margin-top: 22px; font-size: 19px; }
+.role { color: #aaa; font-size: 13px; margin: 3px 0 12px; }
+.team-card p { color: var(--muted); font-size: 13px; }
+
+.step { display: flex; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--border); }
+.step-num { color: #888; font-size: 13px; min-width: 32px; }
+.step h3 { font-size: 19px; }
+.step p { color: var(--muted); font-size: 14px; margin-top: 5px; }
+
+.contact-box {
+ padding: 55px; border: 1px solid #444;
+ background: #101010;
+}
+.contact-box p { color: var(--muted); margin: 16px 0 25px; }
+footer { padding: 28px 0; color: #888; font-size: 12px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+
+@media(max-width: 760px) {
+ .nav-links { gap: 12px; font-size: 11px; }
+ .nav-cta { display: none; }
+ .hero { padding: 85px 0 70px; }
+ h1 { letter-spacing: -2px; }
+ .grid, .about-grid { grid-template-columns: 1fr; }
+ .section-heading { align-items: start; flex-direction: column; }
+ .contact-box { padding: 30px 22px; }
+}
+@media(max-width: 430px) {
+ .logo { font-size: 21px; }
+ .nav-links { gap: 9px; }
+ .nav-links a { font-size: 10px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+ <nav class="container">
+ <a class="logo" href="#home">RANK<span>FORGE</span></a>
+ <div class="nav-links">
+ <a href="#services">Services</a>
+ <a href="#about">About</a>
+ <a href="#team">Team</a>
+ </div>
+ <a class="btn nav-cta" href="#contact">Let's Talk ↗</a>
+ </nav>
+</header>
+
+<main>
+ <section class="hero" id="home" style="border:0">
+ <div class="container">
+ <div class="eyebrow">SEO · Link Building · Digital Growth</div>
+ <h1>Build Authority.<br><span>Grow Without Limits.</span></h1>
+ <p>
+ Strategic link building and quality guest post placements
+ that help brands strengthen authority, improve visibility
+ and build sustainable organic growth.
+ </p>
+ <div class="actions">
+ <a class="btn" href="#contact">Discuss Your Campaign ↗</a>
+ <a class="btn btn-outline" href="#services">Explore Services</a>
+ </div>
+ </div>
+ </section>
+
+ <section id="services">
+ <div class="container">
+ <div class="section-heading">
+ <h2>What We Do</h2>
+ <p>Focused SEO solutions designed to support your growth with relevant placements and thoughtful outreach.</p>
+ </div>
+ <div class="grid">
+ <article class="card">
+ <div class="card-number">01 / AUTHORITY</div>
+ <h3>Guest Post Placements</h3>
+ <p>Relevant publishing opportunities on third-party websites to support your brand and SEO strategy.</p>
+ </article>
+ <article class="card">
+ <div class="card-number">02 / OUTREACH</div>
+ <h3>Link Building</h3>
+ <p>Targeted outreach and publisher relationships built around relevance, quality and campaign goals.</p>
+ </article>
+ <article class="card">
+ <div class="card-number">03 / STRATEGY</div>
+ <h3>SEO Partnerships</h3>
+ <p>Flexible placement support for agencies, consultants and businesses managing ongoing SEO campaigns.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section id="about">
+ <div class="container about-grid">
+ <div>
+ <div class="eyebrow">ABOUT RANKFORGE</div>
+ <h2 style="margin-top:18px">Built for meaningful SEO growth.</h2>
+ <p>We help businesses and SEO agencies find relevant publishing opportunities through a practical, relationship-driven approach.</p>
+ <p>Our focus is simple: clear communication, relevant websites and dependable campaign support.</p>
+ </div>
+ <div>
+ <div class="stat">
+ <strong>Relevance First</strong>
+ <span>Placements aligned with your niche and goals.</span>
+ </div>
+ <div class="stat">
+ <strong>Transparent Process</strong>
+ <span>Clear communication throughout each campaign.</span>
+ </div>
+ <div class="stat">
+ <strong>Flexible Partnerships</strong>
+ <span>Support for agencies and direct businesses.</span>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section id="team">
+ <div class="container">
+ <div class="section-heading">
+ <h2>Meet Our Team</h2>
+ <p>A focused team bringing together SEO knowledge, publisher outreach and campaign coordination.</p>
+ </div>
+ <div class="grid">
+ <article class="team-card">
+ <div class="initials">MF</div>
+ <h3>Your Name</h3>
+ <div class="role">Founder &amp; Director</div>
+ <p>Leading partnerships, business strategy and client relationships at RankForge.</p>
+ </article>
+ <article class="team-card">
+ <div class="initials">SE</div>
+ <h3>SEO Specialist</h3>
+ <div class="role">SEO &amp; Strategy</div>
+ <p>Supporting campaign planning, niche relevance and placement quality.</p>
+ </article>
+ <article class="team-card">
+ <div class="initials">OR</div>
+ <h3>Outreach Specialist</h3>
+ <div class="role">Publisher Relations</div>
+ <p>Coordinating publisher outreach and keeping campaigns organised.</p>
+ </article>
+ </div>
+ <p style="color:#777;font-size:12px;margin-top:18px">Replace sample names, initials and descriptions with your actual team details before publishing.</p>
+ </div>
+ </section>
+
+ <section id="process">
+ <div class="container">
+ <div class="section-heading">
+ <h2>How We Work</h2>
+ <p>A straightforward process that keeps your campaign organised from brief to delivery.</p>
+ </div>
+ <div class="step">
+ <div class="step-num">01</div>
+ <div><h3>Understand Your Goals</h3><p>We discuss your niche, target pages, audience and requirements.</p></div>
+ </div>
+ <div class="step">
+ <div class="step-num">02</div>
+ <div><h3>Identify Opportunities</h3><p>We look for relevant publishing opportunities that fit the campaign.</p></div>
+ </div>
+ <div class="step">
+ <div class="step-num">03</div>
+ <div><h3>Coordinate Delivery</h3><p>We communicate progress and share placement details as agreed.</p></div>
+ </div>
+ </div>
+ </section>
+
+ <section id="contact">
+ <div class="container">
+ <div class="contact-box">
+ <div class="eyebrow">LET'S BUILD SOMETHING</div>
+ <h2 style="margin-top:15px">Ready to grow your authority?</h2>
+ <p>Tell us about your SEO goals and let's explore how RankForge can support your next campaign.</p>
+ <!-- Replace this email with your real business email -->
+ <a class="btn" href="mailto:hello@rankforge.ltd?subject=RankForge%20Campaign%20Inquiry">Start a Conversation ↗</a>
+ </div>
+ </div>
+ </section>
+</main>
+
+<footer>
+ <div class="container footer-inner">
+ <div>© <span id="year"></span> RankForge. All rights reserved.</div>
+ <div>Built for authority. Designed for growth.</div>
+ <a href="#home">Back to top ↑</a>
+ </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
